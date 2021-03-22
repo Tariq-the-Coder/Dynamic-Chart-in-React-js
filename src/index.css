@@ -1,0 +1,152 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  background-color: #3f51b5;
+  /* background-color: #2B73EC; */
+  /* position: fixed; */
+  width: -webkit-fill-available;
+  height: 5rem;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+
+/* Common  */
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #dddddd;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input, select, textarea {
+  padding: 0.6rem;
+  width: -webkit-fill-available;
+  background-color: #f8f8f8;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+input:hover, select:hover, textarea:hover, button:hover {
+  border: 0.2rem #404040 initial;
+}
+
+button.primary {
+  background-color: #20a020;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.main-heading {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #2C3B88;
+  font-style: normal;
+  line-height: 1.2em;
+  font-family: open sans, sans-serif;
+}
+
+a.brand {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header a {
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+}
+
+.Download {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* Table  */
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border: 0.1rem solid;
+  padding: 0.5rem;
+}
+
+/* Form  */
+
+form {
+  max-width: 60rem;
+  margin: auto;
+}
+
+.user-form {
+  margin-top: 5rem;
+}
